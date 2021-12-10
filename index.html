@@ -9,7 +9,7 @@
   <p>I'm ooga master and im from the <a href="about">ooga booga clan (go there if you want more info)</a>, I also really like coding so i made this little website. Anyways, feel free to do whatever you want, here are the links for the things that I did with my friend, booga master:</p>
   <br><button id="b1">SUDO mode</button> <a href="howsyourday">How is your day going?</a>
   <script>
-  let adminOn = false;
+  let sudo = false;
   let asWho = null;
   document.getElementById('b1').onclick=function(){
     if (adminOn==true){
@@ -24,7 +24,7 @@
       if(username=='BOOGA MASTER'){
         if(prompt('Password:')=='epikboi1234'){
           alert('Welcome, booga master.');
-          adminOn = true;
+          sudo = true;
           asWho = 'booga master';
           document.getElementById('b1').innerHTML='End SUDO session';
           document.getElementById('admin').style.display='block';
@@ -33,7 +33,7 @@
       }else if(username=='OOGA MASTER'){
         if(prompt('Password:')=='687'){
           alert('Welcome, ooga master.');
-          adminOn = true;
+          sudo = true;
           asWho = "booga master"; 
           document.getElementById('b1').innerHTML='End SUDO session';
           document.getElementById('admin').style.display='block';
@@ -41,7 +41,18 @@
         }
       }
     }
- }
-  </script><br><br><div id="admin" style="display: none;"><p>yay its working</p></div>
+  }
+  let darkMode=false;
+  document.getElementByID('b2').onclick=function(){
+  if(darkMode==false){
+      document.querySelector('body').style.color='white';
+      document.querySelector('body').style.backgroundColor='black';
+      darkMode=true;
+  } else {
+      document.querySelector('body').style.color='black';
+      document.querySelector('body').style.backgroundColor='white';
+      darkMode=false;
+  }
+  </script><br><br><div id="admin" style="display: none;"><input placeholder="Command line"> <button id="b2">Dark mode</button></div>
 </body>
 </html>
