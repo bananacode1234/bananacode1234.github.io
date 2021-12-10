@@ -8,4 +8,5 @@ body {
   padding: 10px;
   background-color: grey;
   font-family: sans-serif;
+  display: none;
 }
