@@ -17,6 +17,7 @@
       alert("Session ended. Goodbye "+asWho+".")
       asWho = null;
       document.getElementById('b1').innerHTML='Go admin';
+      document.getElementById('admin').style.display='none';
     }else{
       let username=prompt('Username:').toUpperCase();
       if(username=='BOOGA MASTER'){
@@ -25,6 +26,7 @@
           adminOn = true;
           asWho = 'BOOGA MASTER';
           document.getElementById('b1').innerHTML='End session';
+          document.getElementById('admin').style.display='block';
         }
       }else if(username=='OOGA MASTER'){
         if(prompt('Password:')=='687'){
@@ -32,10 +34,11 @@
           adminOn = true;
           asWho = "OOGA MASTER"; 
           document.getElementById('b1').innerHTML='End session';
+          document.getElementById('admin').style.display='block';
         }
       }
     }
  }
-  </script><br><br><div id="admin><p>yay its working</p></div>
+  </script><br><br><div id="admin" style="display: none;"><p>yay its working</p></div>
 </body>
 </html>
