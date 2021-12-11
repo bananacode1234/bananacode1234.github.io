@@ -12,8 +12,8 @@
   let sudo = false;
   let asWho = null;
   document.getElementById('b1').onclick=function(){
-    if (adminOn==true){
-      adminOn = false;
+    if (sudo==true){
+      sudo = false;
       alert("Session ended. Goodbye "+asWho+".")
       asWho = null;
       document.getElementById('b1').innerHTML='SUDO mode';
