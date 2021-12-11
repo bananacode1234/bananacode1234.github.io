@@ -29,3 +29,12 @@ body {
 :hover #b2 {
   cursor: pointer;
 }
+#cmdline {
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
