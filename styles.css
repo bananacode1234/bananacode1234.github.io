@@ -30,7 +30,7 @@ body {
   cursor: pointer;
 }
 #cmdline {
-  border: none;
+  border-width: 2px;
   border-radius: 4px;
   color: black;
   padding: 15px 32px;
