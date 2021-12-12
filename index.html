@@ -29,6 +29,8 @@
           document.getElementById('b1').innerHTML='End SUDO session';
           document.getElementById('admin').style.display='block';
           document.querySelector('title').innerHTML='Home (SUDO mode)';
+        }else{
+          alert('Invalid password.');
         }
       }else if(username=='OOGA MASTER'||username=='OG'){
         if(prompt('Password:')=='687'){
@@ -38,7 +40,11 @@
           document.getElementById('b1').innerHTML='End SUDO session';
           document.getElementById('admin').style.display='block';
           document.querySelector('title').innerHTML='Home (SUDO mode)';
+        }else{
+          alert('Invalid password.');
         }
+      }else{
+        alert('Invalid username.');
       }
     }
   }
