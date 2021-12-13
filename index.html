@@ -49,7 +49,11 @@
     }
   }
   let cmdline=document.getElementById('cmdline');
-  document.getElementById('b2');
-  </script><br><br><div id="admin" style="display: none;"><input id="cmdline" placeholder="Command line"> <button id="b2">Enter</button></div>
+  document.getElementById('b2').onclick=function(){
+    if(cmdline.innerText=='summon(beluga)'){
+      document.getElementById('beluga').style.display='block';
+    }
+  }
+  </script><br><br><div id="admin" style="display: none;"><input id="cmdline" placeholder="Command line"> <button id="b2">Enter</button><br><br><img style="display: none;" src="beluga.png"></img></div>
 </body>
 </html>
