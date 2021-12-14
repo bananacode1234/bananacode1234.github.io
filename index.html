@@ -50,10 +50,16 @@
   }
   let cmdline=document.getElementById('cmdline');
   document.getElementById('b2').onclick=function(){
-    if(cmdline.value=='summon(beluga)'){
-      document.getElementById('beluga').style.display='block';
+    let cmd=cmdline.value.toUpperCase();
+    if(cmd=='SESSION.END()'){
+      sudo = false;
+      alert("Session ended. Goodbye "+asWho+".")
+      asWho = null;
+      document.getElementById('b1').innerHTML='SUDO mode';
+      document.getElementById('admin').style.display='none';
+      document.querySelector('title').innerHTML='Home';
     }
   }
-  </script><br><br><div id="admin" style="display: none;"><input id="cmdline" placeholder="Command line"> <button id="b2">Enter</button><br><br><div id="beluga" style="display: none;"><img src="beluga.png"></div></div>
+  </script><br><br><div id="admin" style="display: none;"><input id="cmdline" placeholder="Command line"> <button id="b2">Enter</button></div>
 </body>
 </html>
