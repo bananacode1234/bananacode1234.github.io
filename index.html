@@ -23,7 +23,7 @@
     }else{
       let username=prompt('Username:').toUpperCase();
       if(username=='BOOGA MASTER'||username=='BG'){
-        if(prompt('Password:')=='bananana'){
+        if(prompt('Password:')=='epikboi1234'){
           alert('Welcome, booga master.');
           sudo = true;
           asWho = 'booga master';
@@ -52,7 +52,11 @@
   let cmdline=document.getElementById('cmdline');
   document.getElementById('b2').onclick=function(){
     let cmd=cmdline.value.toUpperCase();
-    if(cmd=='SESSION.END()'){
+    if(asWho=='BOOGA MASTER'){
+      if(cmd=='epik()'){
+        alert('OMAGA U FOUDn EPIkk SECReT ComMaND');
+      }
+    }else if(cmd=='SESSION.END()'){
       sudo = false;
       alert("Session ended. Goodbye "+asWho+".")
       asWho = null;
