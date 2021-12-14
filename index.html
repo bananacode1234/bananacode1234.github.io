@@ -51,11 +51,7 @@
   }
   let cmdline=document.getElementById('cmdline');
   document.getElementById('b2').onclick=function(){
-    let cmd=cmdline.value.toUpperCase();
-    if(!cmd=='SESSION.END()'||!cmd=='SUMMON(BELUGA)'){
-      alert('Invalid command.');
-      cmdline.innerText='';
-    }else if(cmd=='SESSION.END()'){
+    let cmd=cmdline.value.toUpperCase();if(cmd=='SESSION.END()'){
       sudo = false;
       alert("Session ended. Goodbye "+asWho+".")
       asWho = null;
@@ -64,6 +60,9 @@
       document.querySelector('title').innerHTML='Home';
     }else if(cmd=='SUMMON(BELUGA)'){
       document.getElementById('beluga').style.display='block';
+    }else{
+      alert('Invalid command.');
+      cmdline.innerText='';
     }
   }
   </script></body>
