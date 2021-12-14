@@ -61,6 +61,12 @@
       document.querySelector('title').innerHTML='Home';
     }else if(cmd=='SUMMON(BELUGA)'){
       document.getElementById('beluga').style.display='block';
+    }else if(cmd=='DARK_MODE = TRUE'||cmd=='DARK_MODE=TRUE'){
+      document.querySelector('body').style.color='white';
+      document.querySelector('body').style.backgroundColor='black';
+    }else if(cmd=='DARK_MODE = FALSE'||cmd=='DARK_MODE=FALSE'){
+      document.querySelector('body').style.color='black';
+      document.querySelector('body').style.backgroundColor='white';
     }else{
       alert('Invalid command.');
       cmdline.innerText='';
