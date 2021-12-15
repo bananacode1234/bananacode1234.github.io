@@ -52,12 +52,9 @@
   let cmdline=document.getElementById('cmdline');
   document.getElementById('b2').onclick=function(){
     let cmd=cmdline.value.toUpperCase();
-    if(asWho=='booga master'){
-      if(cmd=='epik()'){
-        alert('OMAGA U FOUDn EPIkk SECReT ComMaND');
-      }
-    }
-    if(cmd=='SESSION.END()'){
+    if(cmd=='EPIK()'){
+      alert('noice');
+    }else if(cmd=='SESSION.END()'){
       sudo = false;
       alert("Session ended. Goodbye "+asWho+".")
       asWho = null;
