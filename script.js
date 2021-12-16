@@ -32,10 +32,6 @@
         }else{
           alert('Invalid password.');
         }
-      }else if(username=='GUEST'){
-        alert('Entered guest mode.');
-        document.querySelector('title').innerHTML='Home (Guest mode)';
-        setTimeout(function(){ alert('There is litterally nothing as guest mode for now but Im working on it.'); }, 1000)
       }else{
         alert('Invalid username.');
       }
