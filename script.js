@@ -38,7 +38,7 @@
     }
   }
   let cmdline=document.getElementById('cmdline');
-  document.getElementById('b2').onclick=function(){
+  function enter(){
     let cmd=cmdline.value.toUpperCase();
     if(cmd=='EPIK()'){
       alert('I');
@@ -91,3 +91,5 @@
       cmdline.value='';
     }
   }
+  document.getElementById('b2').onclick=enter();
+  window.onkeypress=function(){if(event.key=='Enter'){enter()}}
