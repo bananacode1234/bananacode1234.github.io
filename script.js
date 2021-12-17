@@ -92,4 +92,4 @@
     }
   }
   document.getElementById('b2').onclick=enter();
-  window.onkeydown=function(){if(event.key=='Enter'){enter()}}
+  window.onkeydown=function(){if(sudo){if(event.key=='Enter'){enter()}}}
