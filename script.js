@@ -24,7 +24,7 @@
       }else if(username=='OOGA MASTER'||username=='OG'){
         if(prompt('Password:')=='687'){
           setTimeout(function(){
-            alert('Hey Loïc, I am really sorry about you know what.');
+            alert('Hey Loïc, I am really sorry.');
           }, 1500)
           /*alert('Welcome, ooga master.');
           sudo = true;
