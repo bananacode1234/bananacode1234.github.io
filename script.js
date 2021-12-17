@@ -92,4 +92,4 @@
     }
   }
   document.getElementById('b2').onclick=enter();
-  window.onkeypress=function(){if(event.key=='Enter'){enter()}}
+  window.onkeydown=function(){if(event.key=='Enter'){enter()}}
