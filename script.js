@@ -91,5 +91,5 @@
       cmdline.value='';
     }
   }
-  document.getElementById('b2').onclick=enter();
+  document.getElementById('b2').onclick=function(){enter()}
   window.onkeydown=function(){if(sudo){if(event.key=='Enter'){enter()}}}
