@@ -23,15 +23,12 @@
         }
       }else if(username=='OOGA MASTER'||username=='OG'){
         if(prompt('Password:')=='687'){
-          setTimeout(function(){
-            alert('Hey Loïc, I am really sorry.');
-          }, 1500)
-          /*alert('Welcome, ooga master.');
+          alert('Welcome, ooga master.');
           sudo = true;
           asWho = "booga master"; 
           document.getElementById('b1').innerHTML='End SUDO session';
           document.getElementById('admin').style.display='block';
-          document.querySelector('title').innerHTML='Home (SUDO mode)';*/
+          document.querySelector('title').innerHTML='Home (SUDO mode)';
         }else{
           alert('Invalid password.');
         }
