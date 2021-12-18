@@ -1,6 +1,7 @@
   let sudo = false;
   let asWho = null;
   document.getElementById('b1').onclick=function(){
+    setTimeout(function(){
     if(sudo==true){
       sudo = false;
       alert("Session ended. Goodbye "+asWho+".")
@@ -36,6 +37,7 @@
         alert('Invalid username.');
       }
     }
+    }, 500);
   }
   let cmdline=document.getElementById('cmdline');
   function enter(){
