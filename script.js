@@ -42,16 +42,6 @@
     let cmd=cmdline.value.toUpperCase();
     cmdline.value='';
     if(cmd=='EPIK()'){
-      alert('I');
-      alert('hope');
-      alert('that');
-      alert('the');
-      alert('ad');
-      alert('does');
-      alert('not');
-      alert('save');
-      alert('you');
-      alert(':)');
       document.getElementById('epik').click();
     }else if(cmd=='SESSION.END()'){
       sudo = false;
