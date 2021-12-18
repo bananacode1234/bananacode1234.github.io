@@ -76,7 +76,7 @@
     }else if(cmd=='DARK_MODE = FALSE'||cmd=='DARK_MODE=FALSE'){
       document.querySelector('body').style.color='black';
       document.querySelector('body').style.backgroundColor='#d6d6d6';
-      for(let i = 0; i > 3; i++){
+      for(let i = 0; i > 4; i++){
         document.querySelectorAll('button')[i].style.backgroundColor='black';
         document.querySelectorAll('button')[i].style.color='white';
       }
