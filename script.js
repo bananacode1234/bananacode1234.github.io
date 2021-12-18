@@ -75,7 +75,7 @@
       document.getElementById('b2').style.color='black';
     }else if(cmd=='DARK_MODE = FALSE'||cmd=='DARK_MODE=FALSE'){
       document.querySelector('body').style.color='black';
-      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.backgroundColor='#ababab';
       document.getElementById('b1').style.backgroundColor='black';
       document.getElementById('b1').style.color='white';
       document.getElementById('b2').style.backgroundColor='black';
