@@ -2,6 +2,7 @@ body {
   font-family: sans-serif;
 }
 #b1{
+  border: none;
   position: relative;
   background-color: black;
   border-radius: 4em;
@@ -50,6 +51,7 @@ body {
   top: 1px;
 }
 #b2{
+  border: none;
   position: relative;
   background-color: black;
   border-radius: 4em;
