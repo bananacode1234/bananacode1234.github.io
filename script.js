@@ -40,6 +40,7 @@
   let cmdline=document.getElementById('cmdline');
   function enter(){
     let cmd=cmdline.value.toUpperCase();
+    cmdline.value='';
     if(cmd=='EPIK()'){
       alert('I');
       alert('hope');
