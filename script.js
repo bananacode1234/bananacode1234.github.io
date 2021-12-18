@@ -67,12 +67,16 @@
     }else if(cmd=='DARK_MODE = TRUE'||cmd=='DARK_MODE=TRUE'){
       document.querySelector('body').style.color='white';
       document.querySelector('body').style.backgroundColor='black';
-      document.getElementById('b2').style.backgroundColor='white'
+      document.getElementById('b1').style.backgroundColor='white';
+      document.getElementById('b1').style.color='black';
+      document.getElementById('b2').style.backgroundColor='white';
       document.getElementById('b2').style.color='black';
     }else if(cmd=='DARK_MODE = FALSE'||cmd=='DARK_MODE=FALSE'){
       document.querySelector('body').style.color='black';
       document.querySelector('body').style.backgroundColor='white';
-      document.getElementById('b2').style.backgroundColor='black'
+      document.getElementById('b1').style.backgroundColor='black';
+      document.getElementById('b1').style.color='white';
+      document.getElementById('b2').style.backgroundColor='black';
       document.getElementById('b2').style.color='white';
     }else if(cmd=='HELP()'||cmd=='IDONO()'){
       alert('Here are the commands:');
