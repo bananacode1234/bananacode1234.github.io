@@ -76,10 +76,10 @@
     }else if(cmd=='DARK_MODE = FALSE'||cmd=='DARK_MODE=FALSE'){
       document.querySelector('body').style.color='black';
       document.querySelector('body').style.backgroundColor='#d6d6d6';
-      document.getElementById('b1').style.backgroundColor='black';
-      document.getElementById('b1').style.color='white';
-      document.getElementById('b2').style.backgroundColor='black';
-      document.getElementById('b2').style.color='white';
+      for(let i = 0; i > 3; i++){
+        document.querySelectorAll('button')[i].style.backgroundColor='black';
+        document.querySelectorAll('button')[i].style.color='white';
+      }
     }else if(cmd=='HELP()'||cmd=='IDONO()'){
       alert('Here are the commands:');
       alert('1. epik()\n2. session.end()\n3. summon(beluga)\n4. kill(beluga)\n5. dark_mode = true\n6. dark_mode = false\n7. help() / idono()');
