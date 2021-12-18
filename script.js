@@ -83,6 +83,8 @@
     }else if(cmd=='HELP()'||cmd=='IDONO()'){
       alert('Here are the commands:');
       alert('1. epik()\n2. session.end()\n3. summon(beluga)\n4. kill(beluga)\n5. dark_mode = true\n6. dark_mode = false\n7. help() / idono()');
+    }else{
+      cmdline.value='';
     }
   }
   document.getElementById('b2').onclick=function(){enter()}
