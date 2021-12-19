@@ -49,9 +49,11 @@
       sudo = false;
       alert("Session ended. Goodbye "+asWho+".")
       asWho = null;
-      document.getElementById('b1').innerHTML='SUDO mode';
-      document.getElementById('admin').style.display='none';
-      document.querySelector('title').innerHTML='Home';
+      setTimeout(function(){
+        document.getElementById('b1').innerHTML='SUDO mode';
+        document.getElementById('admin').style.display='none';
+        document.querySelector('title').innerHTML='Home';
+      },350)
     }else if(cmd=='SUMMON(BELUGA)'){
       document.getElementById('beluga').style.display='block';
     }else if(cmd=='KILL(BELUGA)'){
