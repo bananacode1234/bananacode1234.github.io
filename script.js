@@ -96,7 +96,7 @@
     }else{
       cmdline.value='';
       cmdline.placeholder='Invalid command.';
-      setTimeout(function(){cmdline.placeholder=''},350);
+      setTimeout(function(){cmdline.placeholder='Command line'},350);
     }
   }
   document.getElementById('b4').onclick=function(){enter()}
