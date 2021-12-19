@@ -73,19 +73,28 @@
       document.getElementById('b1').style.color='black';
       document.getElementById('b2').style.backgroundColor='white';
       document.getElementById('b2').style.color='black';
+      document.getElementById('b3').style.backgroundColor='white';
+      document.getElementById('b3').style.color='black';
+      document.getElementById('b4').style.backgroundColor='white';
+      document.getElementById('b4').style.color='black';
     }else if(cmd=='DARK_MODE = FALSE'||cmd=='DARK_MODE=FALSE'){
       document.querySelector('body').style.color='black';
       document.querySelector('body').style.backgroundColor='#d6d6d6';
-      for(let i = 0; i > 4; i++){
-        document.querySelectorAll('button')[i].style.backgroundColor='black';
-        document.querySelectorAll('button')[i].style.color='white';
-      }
+      document.getElementById('b1').style.backgroundColor='black';
+      document.getElementById('b1').style.color='white';
+      document.getElementById('b2').style.backgroundColor='black';
+      document.getElementById('b2').style.color='white';
+      document.getElementById('b3').style.backgroundColor='black';
+      document.getElementById('b3').style.color='white';
+      document.getElementById('b4').style.backgroundColor='black';
+      document.getElementById('b4').style.color='white';
     }else if(cmd=='HELP()'||cmd=='IDONO()'){
       alert('Here are the commands:');
       alert('1. epik()\n2. session.end()\n3. summon(beluga)\n4. kill(beluga)\n5. dark_mode = true\n6. dark_mode = false\n7. help() / idono()');
     }else{
-      cmdline.value='';
+      cmdline.value='Invalid command.';
+      setTimeout(function(){cmdline.value=''},350);
     }
   }
-  document.getElementById('b2').onclick=function(){enter()}
+  document.getElementById('b4').onclick=function(){enter()}
   window.onkeydown=function(){if(sudo){if(event.key=='Enter'){setTimeout(function(){enter()},100)}}}
