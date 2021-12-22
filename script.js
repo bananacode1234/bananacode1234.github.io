@@ -44,8 +44,8 @@
     let cmd=cmdline.value.toUpperCase();
     cmdline.value='';
     if(cmd=='EPIK()'){
-      document.getElementById('epik').click();
-    }else if(cmd=='SESSION.END()'){
+      location = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    else if(cmd=='SESSION.END()'){
       sudo = false;
       alert("Session ended. Goodbye "+asWho+".")
       asWho = null;
