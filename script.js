@@ -12,7 +12,7 @@
     }else{
       let username=prompt('Username:').toUpperCase();
       if(username=='BOOGA MASTER'||username=='BG'){
-        if(prompt('Password:')=='banana_is_epik'){
+        if(prompt('Password:')=='epikboi1234'){
           alert('Welcome, booga master.');
           sudo = true;
           asWho = 'booga master';
